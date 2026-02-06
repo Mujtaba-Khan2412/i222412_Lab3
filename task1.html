@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Task 1 - Profile Card</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f2f4f8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        padding: 24px;
+      }
+
+      .card {
+        background: white;
+        width: 320px;
+        padding: 20px;
+        margin: 0;
+        text-align: center;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      }
+
+      .avatar {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto 12px;
+        border: 3px solid #d41111;
+      }
+
+      h2 {
+        margin: 0;
+        font-size: 18px;
+        color: #111827;
+      }
+
+      .degree {
+        margin: 6px 0 0;
+        color: #6b7280;
+        font-size: 13px;
+      }
+
+      .role {
+        margin: 6px 0 14px;
+        color: #2c0ce2;
+        font-weight: bold;
+        font-size: 14px;
+      }
+
+      button {
+        background: #1bbf93;
+        color: white;
+        border: none;
+        padding: 10px 16px;
+        border-radius: 999px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #159a76;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img
+        class="avatar"
+        alt="Profile picture"
+        src="c466027a443474d5c2ad248dbb87f255.png"
+      />
+
+      <h2>Mujtaba Khan</h2>
+      <p class="degree">BS Software Engineering</p>
+      <p class="role">Fullstack Developer</p>
+
+      <button type="button">View Profile</button>
+    </div>
+  </body>
+</html>

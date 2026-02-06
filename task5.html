@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Two Column Layout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        padding: 20px;
+      }
+
+      .left {
+        float: left;
+        width: 60%;
+        background-color: #f0f0f0;
+        padding: 20px;
+      }
+
+      .right {
+        float: right;
+        width: 40%;
+        background-color: #e0e0e0;
+        padding: 20px;
+      }
+
+      .container {
+        background-color: white;
+        margin-bottom: 20px;
+        padding: 15px;
+        border-radius: 5px;
+      }
+
+      .container img {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .container p {
+        margin-bottom: 10px;
+      }
+
+      .clear {
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="left">
+      <div class="container">
+        <img src="c466027a443474d5c2ad248dbb87f255" alt="Image 1" />
+        <p>Text for container 1</p>
+      </div>
+      <div class="container">
+        <img src="c466027a443474d5c2ad248dbb87f255" alt="Image 2" />
+        <p>Text for container 2</p>
+      </div>
+      <div class="container">
+        <img src="c466027a443474d5c2ad248dbb87f255" alt="Image 3" />
+        <p>Text for container 3</p>
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="container">
+        <p>Uni info</p>
+        <a href="https://www.nu.edu.pk">Visit FAST University Website</a>
+      </div>
+    </div>
+
+    <div class="clear"></div>
+  </body>
+</html>

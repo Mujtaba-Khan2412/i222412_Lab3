@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Portal</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #f0f0f0;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        min-height: 100vh;
+      }
+
+      header {
+        background-color: #3d4a54;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .main-container {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        gap: 0;
+      }
+
+      aside {
+        background-color: #d0d0d0;
+        padding: 20px;
+      }
+
+      aside ul {
+        list-style: none;
+      }
+
+      aside li {
+        padding: 10px;
+        background-color: #c0c0c0;
+        margin-bottom: 5px;
+        cursor: pointer;
+      }
+
+      aside li:hover {
+        background-color: #a0a0a0;
+      }
+
+      .content {
+        padding: 30px;
+      }
+
+      .content h2 {
+        margin-bottom: 20px;
+        position: relative;
+      }
+
+      .courses {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .course-card {
+        flex: 1;
+        min-width: 200px;
+        background-color: #e3f2fd;
+        padding: 20px;
+        border-radius: 5px;
+        text-align: center;
+        cursor: pointer;
+      }
+
+      .course-card:hover {
+        background-color: #bbdefb;
+        transform: translateY(-5px);
+      }
+
+      footer {
+        background-color: #3d4a54;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        font-size: 12px;
+      }
+
+      footer:hover {
+        background-color: #2c3e50;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Student Portal</h1>
+    </header>
+
+    <div class="main-container">
+      <aside>
+        <ul>
+          <li>Dashboard</li>
+          <li>Profile</li>
+          <li>Courses</li>
+          <li>Settings</li>
+        </ul>
+      </aside>
+
+      <div class="content">
+        <div class="courses">
+          <div class="course-card">Web Engineering</div>
+          <div class="course-card">Data Science</div>
+          <div class="course-card">AI Systems</div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>i222412 Lab 3</p>
+    </footer>
+  </body>
+</html>
